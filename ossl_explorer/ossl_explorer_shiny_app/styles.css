@@ -1,0 +1,192 @@
+div.outer {
+  position: fixed;
+  top: 46px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+/* Customize fonts */
+body, label, input, button, select { 
+  font-family: "Open Sans", Sans-serif !important;
+  font-weight: 200;
+}
+h1, h2, h3 { font-weight: 400; }
+h4 { font-weight: 300; }
+#controls {
+  /* Appearance */
+  background-color: white;
+  padding: 0 20px 20px 20px;
+  cursor: move;
+  /* Fade out while not hovering */
+  opacity: 0.65;
+  zoom: 0.9;
+  transition: opacity 0ms ;
+  
+}
+#controls:hover {
+  /* Fade in while hovering */
+  opacity: 0.95;
+  transition-delay: 0;
+}
+
+#controls1 {
+  /* Appearance */
+  background-color: white;
+  padding: 0 20px 20px 20px;
+  cursor: move;
+  /* Fade out while not hovering */
+  opacity: 1;
+  transform: translateX(-50%);
+}
+
+#controls1:hover {
+  /* Fade in while hovering */
+  opacity: 1;
+}
+
+#controls2 {
+  /* Appearance */
+  background-color: white;
+  padding: 0 0px 0px 0px;
+  margin-bottom: 0px !important;
+  cursor: move;
+  /* Fade out while not hovering */
+  opacity: 0.65;
+  zoom: 0.9;
+  transition: opacity 0ms;
+  text-align: center;
+}
+
+#controls2:hover {
+  /* Fade in while hovering */
+  opacity: 0.95;
+  transition-delay: 0;
+}
+
+#controls3 {
+  /* Appearance */
+  background-color: white;
+  padding: 0 0px 0px 0px;
+  margin-bottom: 0px !important;
+  cursor: move;
+  /* Fade out while not hovering */
+  opacity: 0.65;
+  zoom: 0.9;
+  transition: opacity 0ms;
+  text-align: center;
+  height:200px;
+  overflow-y:scroll;
+  max-height: 600px;
+  overflow-x: hidden;
+}
+
+#controls3:hover {
+  /* Fade in while hovering */
+  opacity: 0.95;
+  transition-delay: 0;
+}
+
+.form-control {
+    border-radius: 12px;
+}
+.selectize-input {
+    border-radius: 12px;
+}
+
+/* If not using map tiles, show a white background */
+.leaflet-container {
+  background-color: white !important;
+}
+
+.mycheckbox .shiny-input-container {
+  display: inline-block;
+  width: auto;
+}
+
+.navbar-default {
+    background-color: #4E9522 !important;
+}
+
+.navbar-default:hover {
+    background-color: #4E9522 !important;
+    color: white;
+}
+
+
+.navbar-default .navbar-brand {color: white;}
+.navbar-default .navbar-brand:hover {color: white;}  /* font-weight: bold; */
+.navbar-brand {padding-top: 10px;}
+.navbar { background-color: #4E9522; !important}
+.navbar-default .navbar-nav > li > a {color:white;}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {color: white;background-color: #94BB54; font-weight: bold;}
+.navbar-default .navbar-nav > li > a:hover {color: white;background-color:#94BB54; font-weight: bold;}
+
+
+
+.leaflet-control-search .search-input {
+    /* box-shadow: -20px 11px 7px #999; */
+    background: #e7f7d3 !important;
+}
+
+.containerS {
+  color: white;
+  background-image: url(image_free3.jpg);
+  background-repeat: no-repeat;
+  background-size: 700px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  height:auto;
+  
+}
+.containerS a {
+  color: greenyellow;
+
+}
+
+.panel-group {
+    margin-bottom: auto;
+}
+.btn-default1 {
+    color: #333;
+    background-color: #fff0;
+    border-color: #ccc0;
+}
+
+/*  Download progres bar */
+.shiny-notification {
+             position:fixed;
+             top: calc(50%);
+             left: calc(50%);
+			 width: 250px;
+			 transform: translateX(-125px);		 
+}
+
+.selectize-input {
+  overflow: inherit;
+}
+/*
+element.style {
+	opacity: 0 !important;
+}
+
+g {
+	opacity: 0 !important;
+}
+
+.leaflet-top {
+bottom: 0 !important;
+}
+
+.leaflet-top .leaflet-control-search {
+top:50% !important;
+right:50% !important;
+transform: translateY(-50%) !important;
+margin-top: 0 !important;
+}
+
+*/
