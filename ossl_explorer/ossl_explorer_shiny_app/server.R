@@ -392,7 +392,7 @@ shinyServer(function(input, output, session) {
     shiny::validate(
       shiny::need(nrow(df) > 0, "Non-existent VISNIR data for the selected location!")
     )
-    plot_ly(df, x = ~rev(x), y = ~y, line = list(color = 'rgb(22, 96, 167)')) %>%
+    plot_ly(df, x = ~x, y = ~y, line = list(color = 'rgb(22, 96, 167)')) %>%
       add_lines() %>%
       layout(xaxis = list(title = 'Wavelength [nm]'),
              yaxis = list(title = 'Reflectance [%]'))  %>%
@@ -416,10 +416,11 @@ shinyServer(function(input, output, session) {
     shiny::validate(
       shiny::need(nrow(df) > 0, "Non-existent MIR data for the selected location!")
     )
-    a <- ggplot(data = df, aes(x = rev(x), y = y)) +
+    a <- ggplot(data = df, aes(x = x, y = y)) +
       geom_line(colour = "red") +
+      scale_x_reverse() +
       labs(x = 'Wavenumber [cm-1]',
-           y = "Absorbance") + # Wavelength [nm]
+           y = "Absorbance") +
       theme_minimal()+
       theme(legend.position = 'none')
 
